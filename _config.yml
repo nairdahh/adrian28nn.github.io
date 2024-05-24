@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Adrian28
 description         : >-
-                      i take pics in games,
+                      i take pics in games
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : adrian28nn/adrian28nn.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -22,8 +22,8 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : John Doe
-  image             : https://imgur.com/a/LEeizER
+  name              : Adrian
+  image             : https://i.imgur.com/dOSBiTV.png
   behance           : your_username
 # dribbble          : your_username
   email             : username@domain.com
