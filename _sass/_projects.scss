@@ -2,15 +2,16 @@
   border-radius: $rounded-borders;
   text-decoration: none !important;
   margin: 10px auto;
+  
 
   .card-img-top {
-    border-radius: $rounded-borders $rounded-borders 0 0;
+    border-radius: $rounded-borders $rounded-borders $rounded-borders $rounded-borders;
   }
 
   transition: transform 400ms;
 
   &:hover:not(.post) {
-    transform: translateY(-8px);
-    box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
+    transform: scale(1.03);
+    box-shadow: 0px 0px 30px -12px rgba(0, 0, 0, 0.88);
   }
 }

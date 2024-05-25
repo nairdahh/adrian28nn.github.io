@@ -1,6 +1,12 @@
 # Get Icons  from : https://fontawesome.com/icons
 # Get Colors from : https://brandcolors.net/
 
+twitter:
+  url   : https://www.twitter.com/
+  icon  : fab fa-twitter
+  color : 1da1f2
+
+
 behance:
   url   : https://www.behance.net/
   icon  : fab fa-behance
@@ -76,10 +82,7 @@ twitch:
   icon  : fab fa-twitch
   color : 6441a5
 
-twitter:
-  url   : https://www.twitter.com/
-  icon  : fab fa-twitter
-  color : 1da1f2
+
 
 vimeo:
   url   : https://www.vimeo.com/
