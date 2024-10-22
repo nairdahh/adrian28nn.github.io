@@ -1,9 +1,9 @@
 ---
 
-date: 2022-03-05
-title: Death's Door
+date: 2022-03-06
+title: Cyberpunk 2077
 description: developer
-developer: Acid Nerve
+developer: CD Projekt Red
 card-image: 10
 banner-image: 5
 banner-offset: 95
