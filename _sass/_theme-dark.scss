@@ -1,7 +1,7 @@
 $dark-100: $dark;
-$dark-300: #2c3032;
-$dark-600: #242526;
-$dark-900: #17191a;
+$dark-300: #313244;
+$dark-600: #1e1e2e;
+$dark-900: #181825;
 
 [data-theme="dark"] {
   body {
@@ -46,7 +46,7 @@ $dark-900: #17191a;
 
   .card.border {
     .card-footer {
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: #11111b;
     }
   }
 

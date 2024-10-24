@@ -1,11 +1,11 @@
 ---
 
 date: 2022-03-06
-title: INDIKA
+title: Silent Hill 2 Remake
 description: developer
-developer: Odd Meter
-card-image: 14
-banner-image: 14
+developer: Bloober Team
+card-image: 1
+banner-image: 1
 banner-offset: 95
 tags: 
 style: 

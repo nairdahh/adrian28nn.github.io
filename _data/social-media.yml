@@ -6,6 +6,10 @@ twitter:
   icon  : fab fa-twitter
   color : 1da1f2
 
+bluesky:
+  url   : https://bsky.app/profile/
+  icon  : fab fa-bluesky
+  color : 0886fe
 
 behance:
   url   : https://www.behance.net/
