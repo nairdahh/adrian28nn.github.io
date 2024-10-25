@@ -46,8 +46,7 @@ author:
   bluesky           : nairdah.bsky.social
 
 
-sass:
-  style: compressed
+
 
 
 ### Posts ###
@@ -87,6 +86,10 @@ defaults:
       type: "posts"
     values:
       comments: false                                   # Set to true to enable disqus comments
+
+
+sass:
+  style: compressed
 
 ### Exclude from processing ###
 exclude:
