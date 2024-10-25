@@ -46,6 +46,10 @@ author:
   bluesky           : nairdah.bsky.social
 
 
+sass:
+  style: compressed
+
+
 ### Posts ###
 permalink: /blog/:title
 
