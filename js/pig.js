@@ -85,7 +85,7 @@
       '  position: relative;' +
       '}' +
       '.' + classPrefix + '-figure {' +
-      '  background-color: #D5D5D5;' +
+      '  background-color: #181825;' +
       '  overflow: hidden;' +
       '  left: 0;' +
       '  position: absolute;' +
@@ -100,10 +100,10 @@
       '  opacity: 0;' +
       '  transition: ' + (transitionSpeed / 1000) + 's ease opacity;' +
       '  -webkit-transition: ' + (transitionSpeed / 1000) + 's ease opacity;' +
-      '  transition: transform .6s ease;' +
+      '  transition: transform .4s ease;' +
       '}' +
       '.' + classPrefix + '-figure img:hover {' +
-      '  transform: scale(1.04);' +
+      '  transform: scale(1.02);' +
       '}' +
       '.' + classPrefix + '-figure img.' + classPrefix + '-thumbnail {' +
       '  -webkit-filter: blur(30px);' +
