@@ -1,0 +1,22 @@
+// Navbar container styling
+.container {
+    // Styles for navbar container
+}
+
+// Main content fluid container styling
+.custom-container {
+    // Basic styling
+    margin: 0 auto;
+    padding: 0 15px;
+
+    // Responsive widths for the custom-container
+    @media (min-width: 2560px) {
+        max-width: 2000px;
+    }
+
+    @media (min-width: 1920px) and (max-width: 2559px) {
+        max-width: 1140px;
+    }
+
+    // Additional media queries as needed
+}

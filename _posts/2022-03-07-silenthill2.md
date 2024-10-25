@@ -5,6 +5,6 @@ description: developer
 developer: Bloober Team
 card-image: 1
 card-offset: 65
-banner-image: 1
-banner-offset: 95
+banner-image: 4
+banner-offset: 28
 ---

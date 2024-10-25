@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page-grid
 ---
 
 {% if page.banner-image %}
@@ -20,17 +20,43 @@ layout: default
     background-image: url('{{ banner-pic.image1080-link }}');
     background-size: cover;
     background-position: right 0px bottom {{page.banner-offset}}%;
-    height: 400px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    position: relative;
 
     }
+    
+    .banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(17, 17, 27, 0.5);
+    }
+
 
     .banner-text {
     text-align: center;
-    color: white;
+    color: #cdd6f4;
+    text-shadow: 
+        0 0 16px #00000063,
+        0px 2px 2px #0000005d;
+    position: relative;
+    z-index: 2;
+    }
+
+    .banner-text h1 {
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    .banner-text p {
+        margin-top: 0;
     }
 
     @media (max-width: 767px) {
@@ -43,7 +69,7 @@ layout: default
 <div class="banner">
     <div class="banner-text">
         <h1><strong>{{ page.title }}</strong></h1>
-        <p><span class="date"><time datetime="{{ page.date | date_to_xmlschema }}"><strong>{{ page.date | date_to_string}}</strong></time><strong>{% if page.developer %} | {{page.developer}} {% endif %}</strong></span> </p>
+        <p><span class="date"><strong>{% if page.developer %}{{page.developer}} {% endif %}</strong></span> </p>
     </div>
 </div>
 
