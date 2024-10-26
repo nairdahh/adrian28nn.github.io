@@ -85,8 +85,7 @@
       '  position: relative;' +
       '}' +
       '.' + classPrefix + '-figure {' +
-      '  background-color: #181825;' +
-      
+      '  background-color: #1f1f29;' +
       '  overflow: hidden;' +
       '  left: 0;' +
       '  position: absolute;' +
