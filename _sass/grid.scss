@@ -10,11 +10,11 @@
     padding: 0 15px;
 
     // Responsive widths for the custom-container
-    @media (min-width: 2560px) {
+    @media (min-width: 1950px) {
         max-width: 1800px;
     }
 
-    @media (min-width: 1920px) and (max-width: 2559px) {
+    @media (min-width: 1120px) and (max-width: 1949px) {
         max-width: 1140px;
     }
 

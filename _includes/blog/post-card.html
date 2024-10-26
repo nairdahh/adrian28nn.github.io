@@ -26,23 +26,68 @@
 {%- endif -%}
    
 <style>
-
   .card-title {
     color: #cdd6f4;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 
+      0 0 16px #000000ce,
+      2px 2px 1px #0000005d;
+    margin-top: 3.3em;
+    margin-left: 0.2em;
+    position: relative;
+    z-index: 3;
+  }
+
+  .card-img-overlay {
+    border-radius: 9px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .card-img-overlay::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      ellipse at bottom,
+      rgba(182, 149, 222, 0.582) 10%,
+      transparent 64%
+    );
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+    transition: opacity 0.3s ease; 
+  }
+
+  .card-img-overlay:hover::after {
+    opacity: 0.9;
+    );
+  }
+
+  .card-img-overlay::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -30%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      ellipse at bottom,
+      rgba(0, 0, 0, 0.356) 15%,
+      transparent 70%
+    );
+    pointer-events: none;
+    z-index: 1;
   }
 </style>
 
-
 <div class="col-12 my-1 wow animated fadeIn" data-wow-delay=".15s">
   <a href="{{ post_url }}" class="project card text-themed" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
-  <img loading="lazy" src="{{ site.data.virtual-photography[post.slug][post.card-image].image1080-link }}" alt="{{ include.album.title }}" class="card-img-top" style="object-position: 0 {{post.card-offset}}%;">
+    <img loading="lazy" src="{{ site.data.virtual-photography[post.slug][post.card-image].image1080-link }}" alt="{{ include.album.title }}" class="card-img-top" style="object-position: 0 {{post.card-offset}}%;">
     <div class="card-img-overlay">
       <h3 class="card-title"><strong>{{ post.title }}</strong></h3>
-
-      <p class="card-title">
-      </p>
-      
     </div>
   </a>
 </div>

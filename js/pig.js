@@ -85,7 +85,7 @@
       '  position: relative;' +
       '}' +
       '.' + classPrefix + '-figure {' +
-      '  background-color: #1f1f29;' +
+      '  background-color: #202029;' +
       '  overflow: hidden;' +
       '  left: 0;' +
       '  position: absolute;' +
@@ -326,7 +326,7 @@
           return 1;
         } else if (lastWindowWidth <= 1280) {
           return 1.5;
-        } else if (lastWindowWidth <= 1920) {
+        } else if (lastWindowWidth <= 1949) {
           return 2;
         }
         return 2.5;
@@ -347,7 +347,7 @@
       getImageSize: function(lastWindowWidth) {
         if (lastWindowWidth <= 640)
           return 100;
-        else if (lastWindowWidth <= 1920)
+        else if (lastWindowWidth <= 1949)
           return 250;
         return 500;
       }
