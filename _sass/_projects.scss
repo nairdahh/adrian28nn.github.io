@@ -19,3 +19,11 @@
     box-shadow: 0px 0px 30px -12px rgba(0, 0, 0, 0.88);
   }
 }
+
+.badge-pill {
+  border-color: $primary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
