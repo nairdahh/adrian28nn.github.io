@@ -1,3 +1,8 @@
+.project {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
 .project.card {
   border-radius: $rounded-borders;
   text-decoration: none !important;
@@ -7,10 +12,41 @@
     border-radius: $rounded-borders $rounded-borders 0 0;
   }
 
-  transition: transform 400ms;
+  transition: box-shadow 400ms;
 
   &:hover:not(.post) {
     box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
+  }
+
+  .card-body {
+    transform-style: preserve-3d; // Ensures nested transforms have the 3D effect
+  }
+
+  .card-title {
+    // Only apply translateZ on hover
+    transition: transform 100ms; // Smooth transition
+  }
+
+  .card-text {
+    transition: transform 100ms; // Smooth transition
+  }
+
+  .badge-pill {
+    transition: transform 100ms; // Smooth transition
+  }
+
+  &:hover {
+    .card-title {
+      transform: translateZ(20px); // Apply effect on hover
+    }
+
+    .card-text {
+      transform: translateZ(20px); // Apply effect on hover
+    }
+
+    .badge-pill {
+      transform: translateZ(20px); // Apply effect on hover
+    }
   }
 }
 
