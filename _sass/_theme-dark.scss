@@ -1,6 +1,6 @@
 $dark-100: $dark;
 $dark-300: #313244;
-$dark-600: #202029;
+$dark-600: #2c2d3d ;
 $dark-900: #1a1a21;
 
 [data-theme="dark"] {
@@ -42,6 +42,8 @@ $dark-900: #1a1a21;
   // Cards
   .card {
     background-color: $dark-600;
+    border-color: $dark-900;
+    border: 0px;
   }
 
   .card.border {

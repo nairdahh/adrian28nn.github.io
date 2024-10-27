@@ -1,7 +1,7 @@
 ---
 name: Friends' Average Rating on Letterboxd
 tools: [Firefox, Add-On]
-image: 
+image: https://raw.githubusercontent.com/adrian28nn/Friends-Average-for-Letterboxd/refs/heads/main/icons/screenshot.png
 description: A Firefox extension that adds a custom ratings histogram on Letterboxd movie pages, displaying only your friends' ratings.
 ---
 
