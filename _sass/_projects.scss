@@ -19,33 +19,33 @@
   }
 
   .card-body {
-    transform-style: preserve-3d; // Ensures nested transforms have the 3D effect
+    transform-style: preserve-3d;
   }
 
   .card-title {
-    // Only apply translateZ on hover
-    transition: transform 100ms; // Smooth transition
+  
+    transition: transform 100ms;
   }
 
   .card-text {
-    transition: transform 100ms; // Smooth transition
+    transition: transform 100ms;
   }
 
   .badge-pill {
-    transition: transform 100ms; // Smooth transition
+    transition: transform 100ms;
   }
 
   &:hover {
     .card-title {
-      transform: translateZ(20px); // Apply effect on hover
+      transform: translateZ(20px);
     }
 
     .card-text {
-      transform: translateZ(20px); // Apply effect on hover
+      transform: translateZ(20px);
     }
 
     .badge-pill {
-      transform: translateZ(20px); // Apply effect on hover
+      transform: translateZ(20px);
     }
   }
 }

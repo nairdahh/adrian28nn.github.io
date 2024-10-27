@@ -33,45 +33,46 @@ body {
     color: $text-white !important;
   }
 }
-// Define the scrollbar theming using the mixin
+
+
 @mixin themed-scrollbar($light-thumb, $dark-thumb, $light-track, $dark-track) {
   [data-theme="light"] {
     ::-webkit-scrollbar {
       scrollbar-width: thin;
-      width: 8px; /* Set the width of the scrollbar */
-      background: $light-track; /* Light mode track color */
+      width: 8px;
+      background: $light-track;
     }
 
     ::-webkit-scrollbar-thumb {
-      background: $light-thumb; /* Light mode thumb color */
-      border-radius: 10px; /* Make the thumb rounder */
-      border: 2px solid $light-track; /* Optional: adds a border that matches the track */
+      background: $light-thumb;
+      border-radius: 10px;
+      border: 2px solid $light-track;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: lighten($light-thumb, 10%); /* Increase brightness on hover */
+      background: lighten($light-thumb, 10%);
     }
 
-    scrollbar-color: $light-thumb $light-track; /* For Firefox */
+    scrollbar-color: $light-thumb $light-track;
   }
 
   [data-theme="dark"] {
     ::-webkit-scrollbar {
-      width: 8px; /* Set the width of the scrollbar */
-      background: $dark-track; /* Dark mode track color */
+      width: 8px;
+      background: $dark-track;
     }
 
     ::-webkit-scrollbar-thumb {
-      background: $dark-thumb; /* Dark mode thumb color */
-      border-radius: 10px; /* Make the thumb rounder */
-      border: 2px solid $dark-track; /* Optional: adds a border that matches the track */
+      background: $dark-thumb;
+      border-radius: 10px;
+      border: 2px solid $dark-track;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: lighten($dark-thumb, 10%); /* Increase brightness on hover */
+      background: lighten($dark-thumb, 10%);
     }
 
-    scrollbar-color: $dark-thumb $dark-track; /* For Firefox */
+    scrollbar-color: $dark-thumb $dark-track; // For Firefox
   }
 }
 
