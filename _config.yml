@@ -2,7 +2,7 @@
 title               : nairdah
 description         : i take pics in games
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : adrian28nn/adrian28nn.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+repository          : nairdahh/nairdahh.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
 
 
@@ -27,7 +27,7 @@ author:
 # dribbble          : your_username
   email             : nn.adrian28@gmail.com
 # facebook          : adrian28
-  github            : adrian28nn
+  github            : nairdahh
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username

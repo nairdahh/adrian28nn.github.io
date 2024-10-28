@@ -14,7 +14,7 @@ This extension lets you play a random browser-based game from a curated collecti
 <br>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/adrian28nn/GameDash/refs/heads/main/icons%20and%20screenshots/screenshot.png"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/adrian28nn/GameDash/refs/heads/main/icons%20and%20screenshots/screenshot-genres.png"/>
+  <img src="https://raw.githubusercontent.com/nairdahh/GameDash/refs/heads/main/icons%20and%20screenshots/screenshot.png"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/nairdahh/GameDash/refs/heads/main/icons%20and%20screenshots/screenshot-genres.png"/>
 </p>
 
 <br>
@@ -29,7 +29,7 @@ This extension lets you play a random browser-based game from a curated collecti
 <br>
 
 
-<p align="center"><a class="github-button" href="https://github.com/adrian28nn/GameDash" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="View GameDash on GitHub">View on GitHub</a></p>
+<p align="center"><a class="github-button" href="https://github.com/nairdahh/GameDash" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="View GameDash on GitHub">View on GitHub</a></p>
 
 <p align="center"><a href="https://addons.mozilla.org/en-US/firefox/addon/gamedash/"><img src="https://blog.mozilla.org/addons/files/2015/11/get-the-addon.png" /></a></p>
 
