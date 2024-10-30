@@ -199,7 +199,39 @@
     idleAnimationFrame += 1;
   }
 
+  function showPurrText() {
+    const purrText = document.createElement('div');
+    purrText.className = 'purr';
+    purrText.textContent = 'purr..';
+
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+
+    if (currentTheme === 'dark') {
+      purrText.style.color = '#cdd6f4'; // Adjust the color for dark mode
+  } else {
+      purrText.style.color = '#4c4f69'; // Adjust the color for light mode
+  }
+  
+    const rect = nekoEl.getBoundingClientRect();
+    purrText.style.left = `${rect.right - 3}px`;
+    purrText.style.top = `${rect.top - 5}px`;
+  
+    document.body.appendChild(purrText);
+
+    requestAnimationFrame(() => {
+      purrText.classList.add('fade-in');
+    });
+  
+    setTimeout(() => {
+      purrText.classList.remove('fade-in');
+      purrText.classList.add('fade-out');
+      setTimeout(() => purrText.remove(), 500);
+    }, 1500);
+  }
+
   function explodeHearts() {
+    showPurrText();
+
     const parent = nekoEl.parentElement;
     const rect = nekoEl.getBoundingClientRect();
     const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
@@ -207,7 +239,7 @@
     const centerX = rect.left + rect.width / 2 + scrollLeft;
     const centerY = rect.top + rect.height / 2 + scrollTop;
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 5; i++) {
       const heart = document.createElement('div');
       heart.className = 'heart';
       heart.textContent = '❤';
@@ -235,8 +267,22 @@
 			  font-size: 2em;
 			  animation: heartBurst 1s ease-out;
 			  animation-fill-mode: forwards;
-			  color: #ab9df2;
+			  color: #cba6f7;
+        user-select: none;
 		  }
+      .purr {
+        position: absolute;
+        font-size: 0.8em;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+        user-select: none;
+      }
+      .purr.fade-in {
+        opacity: 1;
+      }
+      .purr.fade-out {
+        opacity: 0;
+      }
 	  `;
 
   document.head.appendChild(style);

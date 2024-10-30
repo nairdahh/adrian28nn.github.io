@@ -1,3 +1,5 @@
+
+
 html {
   padding-left: calc(100vw - 100%);
 }
@@ -76,5 +78,5 @@ body {
   }
 }
 
-// Apply the mixin with the desired colors
-@include themed-scrollbar(#4c4f69, #bf9ae8, #eff1f5, #1a1a21); // Light thumb, dark thumb, light track, dark track
+
+@include themed-scrollbar(#4c4f69, #bf9ae8, #eff1f5, #1a1a21);
