@@ -1,8 +1,21 @@
+:root {
+  --primary-light: #8839ef; 
+  --primary-dark: #cba6f7;
+}
+
+[data-theme='light'] {
+  --primary: var(--primary-light);
+}
+
+[data-theme='dark'] {
+  --primary: var(--primary-dark);
+}
+
 .link-after {
   content: "";
   display: block;
   height: 0.15em;
-  background: $primary;
+  background: var(--primary);
 }
 
 .nav-link,

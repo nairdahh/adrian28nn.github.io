@@ -1,12 +1,15 @@
 .project {
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
+  opacity: 0;
+
 }
 
 .project.card {
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
   border-radius: $rounded-borders;
   text-decoration: none !important;
   margin: 10px auto;
+  background-color: #e6e9ef;
 
   .card-img-top {
     border-radius: $rounded-borders $rounded-borders 0 0;
@@ -50,13 +53,20 @@
   }
 }
 
+:root {
+  --badge-pill-color: #8839ef;
+}
+
+[data-theme='dark'] {
+  --badge-pill-color: #cba6f7;
+}
   
 .badge-pill {
-  border-color: $primary !important;
+  border-color: var(--badge-pill-color) !important;
 }
 
 .text-primary {
-  color: $primary !important;
+  color: var(--badge-pill-color) !important;
 }
 
 

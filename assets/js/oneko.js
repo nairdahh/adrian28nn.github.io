@@ -226,7 +226,7 @@
       purrText.classList.remove('fade-in');
       purrText.classList.add('fade-out');
       setTimeout(() => purrText.remove(), 500);
-    }, 1500);
+    }, 1000);
   }
 
   function explodeHearts() {
