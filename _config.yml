@@ -3,7 +3,6 @@ title               : nairdah
 description         : i sometime take pics in games
 url                 : nairdah.me
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : nairdahh/nairdahh.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
 logo                : /assets/avatar-round.png
 
