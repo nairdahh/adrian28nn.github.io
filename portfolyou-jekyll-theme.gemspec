@@ -1,10 +1,10 @@
 Gem::Specification.new do |spec|
-  spec.name                    = "adrian28-vp-portfolio"
+  spec.name                    = "nairdah.me"
   spec.version                 = "1"
   spec.authors                 = ["Adrian Neacșu"]
 
   spec.summary                 = "A virtual photography portfolio."
-  spec.homepage                = "https://adrian28nn.github.io/"
+  spec.homepage                = "https://nairdah.me/"
   spec.license                 = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
