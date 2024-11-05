@@ -6,8 +6,11 @@
 - project card background color maybe whiter than the site's background
 - navbar items changes location based on the bold text of the active page
 - extra addons from nico's end of the guide
-- project cards: on hover, drop shadow on text
+- project cards: on hover, drop shadow on text & click animation, water drop like google
 - second "navbar" for music & movies (and maybe some more(like VP page about hobby and link to others VPs and resources)) one the about page - each new page contaning a "back" button on the left, outisde the main grid, that goes back to the main about page
 - pic of Tobi on about page
+- secret pages
+- title reveal with typing animation
+- hover css effect on title and other elements/links
 
 - the obvious landing page and about me 

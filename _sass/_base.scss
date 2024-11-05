@@ -80,3 +80,41 @@ body {
 
 
 @include themed-scrollbar(#4c4f69, #bf9ae8, #eff1f5, #1a1a21);
+
+
+.markdown-body a {
+  color: $text-link-light;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+
+  [data-theme="dark"] & {
+    color: $text-link-dark;
+  }
+
+  &:hover {
+    color: $text-link-hover-light;
+    text-shadow: 0 0 1px currentColor;
+
+    [data-theme="dark"] & {
+      color: $text-link-hover-dark;
+      text-shadow: 0 0 1px currentColor;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: currentColor;
+    width: 0;
+    transition: width 0.35s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

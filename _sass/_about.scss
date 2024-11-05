@@ -1,0 +1,60 @@
+#hi-im-adrian {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+#about-content {
+    position:relative;
+}
+
+#back-button {
+    position: absolute;
+    top: 6px;
+    left: -60px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+#back-button i {
+    font-size: 34px;
+    color: #a7b2c8 ;
+    transition: color 0.2s ease;
+
+    [data-theme="dark"] & {
+        color: #4e4e63;
+      }
+}
+
+
+#back-button:hover i {
+    color: $primary-light;
+
+    [data-theme="dark"] & {
+        color: $primary;
+      }
+}
+
+#back-button .back-text {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s ease, top 0.2s ease;
+    font-size: 12px;
+    color: #a7b2c8;
+
+    [data-theme="dark"] & {
+        color: #4e4e63;
+      }
+}
+
+#back-button:hover .back-text {
+    opacity: 100%;
+    top: 36px;
+}

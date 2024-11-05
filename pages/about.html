@@ -1,0 +1,112 @@
+---
+layout: about
+about_page: true
+title: about
+permalink: /about/
+weight: 3
+---
+
+<div id="about-content">
+   <!-- defautl about me -->
+   <div id="about-me">
+
+    <span id="hi-im-adrian">hi, i'm adrian</span><br>
+    video games have always been a huge part of my life, shaping not only my interests but also the way i see the world. they're not just games to me, they're fully immersive experiences that let me step into another reality, and i love taking the time to soak it all in.
+    <br><br>
+    besides gaming, i've got a real interest in photography and cinematography, and bringing these together eventually led me to virtual photography. it's a way to capture beautiful and cinematic moments from the games i love, and to create my own stories through each shot. it's how i show these games through my own perspective and style.
+    <br><br>
+    so here i am, sharing this hobby with you. the virtual photography community is amazing, and i love contributing to it, and also i would love to help people discover what can be done with just a game and a bit of creativity. i'm still new to it though, so i'm always looking for inspiration and ways to improve, creating shots that feel more and more satisfying for me and hopefully catch more eyes.
+    <br><br>
+    in the future, i plan to use this site for more than just virtual photography. i want it to be a cozy, relaxed space to share my projects in whatever form they take. the site itself has been as much an experiment as my other projects and hobbies.
+    <br><br>
+    you can also check out the sections below to learn more about me, virtual photography, and other creative inspirations. and if you want to connect, my socials and email are in the footer. enjoy exploring!
+    <br><br>
+        <!-- navigation links -->
+        <nav>
+            <ul>
+                <li><a href="#" class="about-nav-link" data-target="about-vp">about virtual photography</a></li>
+                <li><a href="#" class="about-nav-link" data-target="movies">movies</a></li>
+                <li><a href="#" class="about-nav-link" data-target="music">music</a></li>
+            </ul>
+        </nav>
+    </div>
+
+   <!-- about VP -->
+   <div id="about-vp" style="display: none;">
+       <h2>Virtual Photography</h2>
+       <p>detaild about vp</p>
+   </div>
+
+   <!-- movies -->
+   <div id="movies" style="display: none;">
+       <h2>movies</h2>
+       <p>i like movies, check out my letterboxd.</p>
+   </div>
+
+   <!-- music -->
+   <div id="music" style="display: none;">
+        <h2>music</h2>
+        <p>music is my lfe.</p>
+    </div>
+
+</div>
+
+
+
+
+<!-- back button -->
+<button id="back-button" style="display: none;">
+    <i class="fa-solid fa-circle-arrow-left"></i>
+    <span class="back-text">back</span>
+ </button>
+
+<!-- JavaScript for dynamic content switch and the back button -->
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+       // get all the links and divs
+       const links = document.querySelectorAll('.about-nav-link');
+       const contents = document.querySelectorAll('#about-content > div');
+       const backButton = document.getElementById('back-button');
+
+       // show content based on targetId
+       function showContent(targetId) {
+           // hide all content divs
+           contents.forEach(content => content.style.display = 'none');
+           
+           // show the targeted content div
+           const targetContent = document.getElementById(targetId);
+           if (targetContent) targetContent.style.display = 'block';
+       }
+
+       // show back button
+       function showBackButton() {
+           backButton.style.display = 'block';
+       }
+
+       // hide back button
+       function hideBackButton() {
+           backButton.style.display = 'none';
+       }
+
+       // click event for navigation links
+       links.forEach(link => {
+           link.addEventListener('click', function(e) {
+               e.preventDefault();
+               const targetId = this.getAttribute('data-target');
+               showContent(targetId);
+               showBackButton(); // show back button when switching to another div
+           });
+       });
+
+       // back button click event
+       backButton.addEventListener('click', function() {
+           showContent('about-me'); // go back to the default content
+           hideBackButton(); // hide back button when on the default content
+       });
+
+       // set default content and hide back button initially
+       showContent('about-me');
+       hideBackButton();
+   });
+</script>
+

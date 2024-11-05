@@ -1,4 +1,5 @@
 $primary:   #cba6f7;
+$primary-light: #8839ef;
 $secondary: #1994ff;
 $success:   #a6e3a1;
 $info:      #74c7ec;
@@ -6,6 +7,11 @@ $warning:   #fab387;
 $danger:    #f38ba8;
 $light:     #eff1f5;
 $dark:      #45475a;
+
+$text-link-dark: $primary;
+$text-link-hover-dark: #d5b7f8;
+$text-link-light: $primary-light;
+$text-link-hover-light: $primary-light;
 
 $text-black: #4c4f69;
 $text-white: #cdd6f4;
