@@ -33,6 +33,14 @@
   }
 }
 
+.nav-link img,
+.navbar-brand img {
+  &::after {
+    content: none !important;
+    text-decoration: none !important;
+  }
+}
+
 .nav-item.active {
   font-weight: bold;
 

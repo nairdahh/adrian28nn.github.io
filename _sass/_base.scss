@@ -10,11 +10,6 @@ body {
   background-color: $light;
 }
 
-.card {
-  background-color: $light;
-  border: 1px solid #7c7f9363;
-
-}
 
 .badge {
   font-weight: 500;
@@ -117,4 +112,8 @@ body {
   &:hover::after {
     width: 100%;
   }
+}
+
+.markdown-body a.img-href::after {
+  content: none !important;
 }

@@ -1,22 +1,5 @@
-// Fine Circle Responsive Image
-// Inspired by https://stackoverflow.com/a/6615994/10194811
-
-#container {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-}
-
-#dummy {
-  padding-top: 100%; /* 1:1 aspect ratio */
-}
-
-#element {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.vertical-center {
+  margin-top: 80px;
 }
 
 .circle-image {
@@ -25,4 +8,63 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
+  margin-bottom: 10px;
+}
+
+.lp-container {
+  display: flex;
+  justify-content: flex-start; /* Pushes content to opposite sides */
+  align-items: center; /* Centers vertically if items have different heights */
+  width: 100%;
+}
+
+.lp-text-container p {
+  margin: 0; /* Remove default margin */
+  margin-bottom: -6px; /* Optional: fine-tune spacing */
+  user-select: none;
+}
+
+.lp-image-container {
+  margin-left: auto;
+  width: 20%;
+}
+
+#hello-there {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.lp-line2 {
+  font-size: 20px;
+  font-weight: 300;
+  opacity: 0%;
+}
+
+.bold-nairdah {
+  font-weight: 800;
+  display: inline-block;
+  transition: letter-spacing 0.3s ease;
+  
+}
+
+.bold-nairdah:hover {
+  letter-spacing: 5px;
+}
+
+.lp-345 {
+  opacity: 0%;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.vp-banner {
+  border-radius: 12px; /* Adjust the value for more or less rounding */
+  transition: transform 0.3s ease;
+  margin-top: -15px;
+}
+
+.vp-banner:hover {
+  transform: scale(1.05); /* Slightly scales up the image */
 }

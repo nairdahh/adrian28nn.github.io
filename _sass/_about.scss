@@ -12,7 +12,7 @@
 #back-button {
     position: absolute;
     top: 6px;
-    left: -60px;
+    left: -40px;
     background: none;
     border: none;
     cursor: pointer;
@@ -22,39 +22,20 @@
 
 #back-button i {
     font-size: 34px;
-    color: #a7b2c8 ;
-    transition: color 0.2s ease;
+    color: $text-black ;
+    opacity: 25%;
 
     [data-theme="dark"] & {
-        color: #4e4e63;
+        color: $text-white;
+        opacity: 25%;
       }
 }
 
 
 #back-button:hover i {
-    color: $primary-light;
+    opacity: 50% ;
 
     [data-theme="dark"] & {
-        color: $primary;
+        opacity: 50%;
       }
-}
-
-#back-button .back-text {
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.2s ease, top 0.2s ease;
-    font-size: 12px;
-    color: #a7b2c8;
-
-    [data-theme="dark"] & {
-        color: #4e4e63;
-      }
-}
-
-#back-button:hover .back-text {
-    opacity: 100%;
-    top: 36px;
 }
