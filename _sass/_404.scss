@@ -255,3 +255,51 @@
     transform: scale(0.98);
   }
 }
+
+
+.text-404 {
+  font-size: 30px;
+  font-weight: 700;
+  color: $text-black;
+  display:block;
+
+  [data-theme="dark"] & {
+    color: $text-white;
+  }
+
+}
+
+.btn-404 {
+  margin-top: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  transition: all .2s ease;
+  color: #6f5b92;
+  border: 3px solid #6f5b92;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  background-color : transparent;
+  outline: none;
+  border-radius: 8px;
+  text-decoration: none !important;
+  display: inline-block;
+
+  [data-theme="dark"] & {
+    color: $primary;
+    border: 3px solid $primary;
+  }
+}
+
+.btn-404:hover {
+  color: #eff1f5;
+  background-color: #6f5b92;
+
+  [data-theme="dark"] & {
+    color: #1a1a21;
+    background-color: $primary;
+  }
+
+}

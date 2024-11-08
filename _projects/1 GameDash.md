@@ -5,7 +5,7 @@ image: https://raw.githubusercontent.com/adrian28nn/GameDash/refs/heads/main/ico
 description: Click to play a random browser game when you're bored!
 ---
 
-<h2 style="text-align:center; font-weight: bold;">GameDash</h2>
+<h2 style="text-align:center; font-weight: bold;"><span class="project-title">GameDash</span></h2>
   <br>
 Ever been so bored you couldn't figure out what to do? Well, say goodbye to boredom and hello to random fun with **GameDash**! 🎮
 
@@ -29,8 +29,8 @@ This extension lets you play a random browser-based game from a curated collecti
   <br>
 
 
-<p align="center"><a class="github-button" href="https://github.com/nairdahh/GameDash" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="View GameDash on GitHub">View on GitHub</a></p>
+<p align="center"><a class="github-button img-bright" href="https://github.com/nairdahh/GameDash" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="View GameDash on GitHub">View on GitHub</a></p>
 
-<p align="center"><a href="https://addons.mozilla.org/en-US/firefox/addon/gamedash/"><img src="https://blog.mozilla.org/addons/files/2015/11/get-the-addon.png" /></a></p>
+<p align="center"><a href="https://addons.mozilla.org/en-US/firefox/addon/gamedash/" class="img-href img-bright"><img src="https://blog.mozilla.org/addons/files/2015/11/get-the-addon.png" /></a></p>
 
-<p align="center"><a href="https://ko-fi.com/nairdah"><img src="https://ko-fi.com/img/githubbutton_sm.svg" /></a></p>
+<p align="center"><a href="https://ko-fi.com/nairdah" class="img-href img-bright"><img src="https://ko-fi.com/img/githubbutton_sm.svg" /></a></p>

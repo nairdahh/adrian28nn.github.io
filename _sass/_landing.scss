@@ -13,14 +13,14 @@
 
 .lp-container {
   display: flex;
-  justify-content: flex-start; /* Pushes content to opposite sides */
-  align-items: center; /* Centers vertically if items have different heights */
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
 }
 
 .lp-text-container p {
-  margin: 0; /* Remove default margin */
-  margin-bottom: -6px; /* Optional: fine-tune spacing */
+  margin: 0;
+  margin-bottom: -6px;
   user-select: none;
 }
 
@@ -60,11 +60,20 @@
 }
 
 .vp-banner {
-  border-radius: 12px; /* Adjust the value for more or less rounding */
+  display:none;
+  border-radius: 12px;
   transition: transform 0.3s ease;
   margin-top: -15px;
 }
 
+[data-theme="light"] .light-theme-image {
+  display: block;
+}
+
+[data-theme="dark"] .dark-theme-image {
+  display: block;
+}
+
 .vp-banner:hover {
-  transform: scale(1.05); /* Slightly scales up the image */
+  transform: scale(1.05);
 }

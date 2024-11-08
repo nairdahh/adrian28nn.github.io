@@ -35,4 +35,7 @@
   @include themed(background-color, $light, $dark);
 }
 
+.card {
+  border: 0px !important;
+}
 

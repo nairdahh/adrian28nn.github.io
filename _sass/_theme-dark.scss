@@ -43,7 +43,7 @@ $dark-900: #1a1a21;
   .card {
     background-color: $dark-600;
     border-color: $dark-900;
-    border: 0px;
+    border: 0px !important;
   }
 
   .card.border {

@@ -12,3 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const image = document.querySelector('.circle-image');
+    
+    if (image) {
+      image.style.opacity = 0;
+      
+      image.style.transition = 'opacity 1s ease';
+      
+      setTimeout(() => {
+        image.style.opacity = 1;
+      }, 100);
+    }
+  });
+  

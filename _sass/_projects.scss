@@ -11,7 +11,7 @@
   margin: 10px auto;
   background-color: #F4F6FA;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  border: 0px;
+  border: 0px !important;
 
   .card-img-top {
     border-radius: $rounded-borders $rounded-borders 0 0;
@@ -75,3 +75,17 @@
 }
 
 
+.project-title {
+  display: inline-block;
+  transition: letter-spacing 0.3s ease;
+  
+}
+
+.project-title:hover {
+  letter-spacing: 3px;
+}
+
+
+.img-bright:hover img {
+  filter: brightness(1.15);
+}
