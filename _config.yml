@@ -2,7 +2,7 @@
 title               : nairdah
 description         : i sometime take cool pics in video games
 url                 : https://nairdah.me
-baseurl             : "https://nairdah.me"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 remote_theme        : YoussefRaafatNasry/portfolYOU
 logo                : /assets/avatar-round.png
 keywords: 'nairdah, nairdah.me, adrian28, vp, virtual, photography, romania, cinematic, video, games'
