@@ -48,14 +48,11 @@ author:
 # keybase           : your_username
   bluesky           : nairdah.bsky.social
 
-  url               : https://nairdah.me/
-
-
 
 
 
 ### Posts ###
-permalink: /blog/:title
+permalink: /virtual-photography/:title
 
 
 ### Collections ###
