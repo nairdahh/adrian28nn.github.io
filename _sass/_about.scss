@@ -15,6 +15,32 @@
     position:relative;
 }
 
+
+
+.image-button-nav {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.vpbuttonclass, .nonvpbuttonclass {
+    transition: transform 0.3s ease, box-shadow 0.3s !important;
+    border-radius: 12px;
+}
+
+.vpbuttonclass:hover {
+    transform: scale(1.025);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.nonvpbuttonclass:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.205);
+}
+
+
+
 #back-button {
     position: absolute;
     top: 6px;
@@ -44,4 +70,25 @@
     [data-theme="dark"] & {
         opacity: 50%;
       }
+}
+
+
+
+
+
+
+.simple-lightbox img {
+    width: 50%;
+  }
+  
+.sl-overlay {
+    background: rgb(0, 0, 0) !important;
+}
+
+.sl-wrapper .sl-image {
+    border-radius: 20px !important;
+}
+
+.sl-wrapper .sl-close {
+    color: $light !important;
 }

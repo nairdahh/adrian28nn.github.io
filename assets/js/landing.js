@@ -12,7 +12,7 @@ window.onload = function() {
     var lp345 = document.querySelector('.lp-345');
     lp345.style.transition = 'opacity 1s ease';
     lp345.style.opacity = 1;
-  }, 1800); // 1.35s delay
+  }, 1900); // 1.35s delay
 
   // delay to lp-line2
   setTimeout(function() {

@@ -13,7 +13,7 @@
   const rect = targetEl.getBoundingClientRect();
 
   let nekoPosX = rect.right + 20;
-  let nekoPosY = rect.top + 8; 
+  let nekoPosY = rect.top + 9; 
 
   let mousePosX = nekoPosX;
   let mousePosY = nekoPosY;

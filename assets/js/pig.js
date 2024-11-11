@@ -6,6 +6,7 @@
  * Further modified by originalnicodr to work with external imagelinks instead of filenames.
 */
 
+
 (function(global) {
   'use strict';
 
@@ -938,3 +939,4 @@
   }
 
 }(this));
+

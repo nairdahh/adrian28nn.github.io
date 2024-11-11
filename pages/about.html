@@ -11,24 +11,22 @@ weight: 3
    <div id="about-me">
 
     <span id="hi-im-adrian">hi, i'm adrian</span><br>
-    video games have always been a huge part of my life, shaping not only my interests but also the way i see the world. they're not just games to me, they're fully immersive experiences that let me step into another reality, and i love taking the time to soak it all in.
+    video games have always been a huge part of my life, shaping my interests and how i see the world. they're not just games to me, they're fully immersive experiences that let me step into another reality, and i love taking the time to soak it all in.
     <br><br>
-    besides gaming, i've got a real interest in photography and cinematography, and bringing these together eventually led me to virtual photography. it's a way to capture beautiful and cinematic moments from the games i love, and to create my own stories through each shot. it's how i show these games through my own perspective and style.
+    besides gaming, i have a strong interest in photography and cinematography, and bringing these together eventually led me to virtual photography. it's a way to capture beautiful and cinematic moments from the games i love, and to create my own stories through each shot. it's how i show these games through my own perspective and style.
     <br><br>
-    so here i am, sharing this hobby with you. the virtual photography community is amazing, and i love contributing to it, and also i would love to help people discover what can be done with just a game and a bit of creativity. i'm still new to it though, so i'm always looking for inspiration and ways to improve, creating shots that feel more and more satisfying for me and hopefully catch more eyes.
+    so here i am, sharing my journey with you. the virtual photography community is amazing, and i love contributing to it. i also hope to help people discover what can be created with just a game and a bit of creativity. i'm still new to it though, so i'm always seeking inspiration and ways to improve, creating shots that feel more and more satisfying for me and hopefully catch more eyes.
     <br><br>
-    in the future, i plan to use this site for more than just virtual photography. i want it to be a cozy, relaxed space to share my projects in whatever form they take. the site itself has been as much an experiment as my other projects and hobbies.
+    in the future, i plan to use this site for more than just virtual photography. i want it to be a cozy, relaxed space where i can share my projects in any form they take. the site itself has been as much of an experiment as my other projects and hobbies.
     <br><br>
-    you can also check out the sections below to learn more about me, virtual photography, and other creative inspirations. and if you want to connect, my socials and email are in the footer — enjoy exploring my site!
+    you can also check out the pages below to learn more about me, virtual photography, and other creative inspirations. and if you'd like to connect, my socials and email are in the footer — enjoy exploring the site!
     <br><br>
         <!-- navigation links -->
-        <nav>
-            <ul>
-                <li><a href="#" class="about-nav-link" data-target="about-vp">about virtual photography</a></li>
-                <li><a href="#" class="about-nav-link" data-target="movies">movies</a></li>
-                <li><a href="#" class="about-nav-link" data-target="music">music</a></li>
-            </ul>
+        <nav class="image-button-nav">
+            <a href="#" class="about-nav-link img-href vpbuttonclass" data-target="about-vp"><img src="/assets/button-about-vp.png" alt="About Virtual Photography" class="nav-image-button"></a><a href="#" class="about-nav-link img-href nonvpbuttonclass" data-target="music"><img src="/assets/button-music.png" alt="Movies" class="nav-image-button"></a><a href="#" class="about-nav-link img-href nonvpbuttonclass" data-target="movies"><img src="/assets/button-movies.png" alt="Music" class="nav-image-button"></a>
         </nav>
+    <br>
+        <small>also, here's <a href="/assets/tobi.jpg" class="simple-lightbox" data-lightbox="image-1" data-title="My cat, Tobi">my cat, Tobi!</a></small>
     </div>
 
    <!-- about VP -->
@@ -106,6 +104,17 @@ weight: 3
        // set default content and hide back button initially
        showContent('about-me');
        hideBackButton();
+
+     // SimpleLightbox
+     var lightbox = new SimpleLightbox('.simple-lightbox', {
+    nav: false,
+    captions: true,
+    loop: false,
+    scrollZoom: false,
+  });
+
    });
+
+
 </script>
 
