@@ -40,6 +40,16 @@
 }
 
 
+.inspavatar {
+    transition: transform 0.3s ease !important;
+}
+
+.inspavatar:hover {
+    transform: scale(1.099);
+}
+
+
+
 
 #back-button {
     position: absolute;
