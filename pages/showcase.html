@@ -1,0 +1,93 @@
+---
+layout: default
+title: showcase
+hidden: true
+---
+
+<div id="showcase-container">
+  <img id="showcase-image" src="" alt="Showcase Image">
+</div>
+
+<script>
+  async function fetchRandomImage() {
+    try {
+      const gameFiles = ["indika.json","silenthill2.json"];
+      const randomGameFile = gameFiles[Math.floor(Math.random() * gameFiles.length)];
+      const gameDataResponse = await fetch(`/assets/showcase/${randomGameFile}`);
+      const gameData = await gameDataResponse.json();
+      const randomImage = gameData[Math.floor(Math.random() * gameData.length)];
+      return randomImage['imageFull-link'];
+    } catch (error) {
+      console.error('Error fetching image data:', error);
+      return null;
+    }
+  }
+
+  async function updateShowcaseImage() {
+    const imageElement = document.getElementById('showcase-image');
+    const imageUrl = await fetchRandomImage();
+
+    if (imageUrl) {
+      imageElement.src = imageUrl;
+      imageElement.onload = () => {
+        const aspectRatio = imageElement.naturalWidth / imageElement.naturalHeight;
+        const viewportRatio = window.innerWidth / window.innerHeight;
+
+        if (aspectRatio > viewportRatio) {
+          imageElement.style.height = '100%';
+          imageElement.style.width = 'auto';
+          imageElement.style.animation = `slide-horizontal ${10 / aspectRatio}s linear infinite alternate`;
+        } else {
+          imageElement.style.width = '100%';
+          imageElement.style.height = 'auto';
+          imageElement.style.animation = `slide-vertical ${10 * aspectRatio}s linear infinite alternate`;
+        }
+      };
+    }
+  }
+
+  function startShowcase() {
+    updateShowcaseImage();
+    setInterval(updateShowcaseImage, 5000);
+  }
+
+  document.addEventListener('DOMContentLoaded', startShowcase);
+</script>
+
+<style>
+  #showcase-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+  }
+
+  #showcase-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: none;
+  }
+
+  @keyframes slide-horizontal {
+    from {
+      transform: translateX(0) translate(-50%, -50%);
+    }
+    to {
+      transform: translateX(-100%) translate(-50%, -50%);
+    }
+  }
+
+  @keyframes slide-vertical {
+    from {
+      transform: translateY(0) translate(-50%, -50%);
+    }
+    to {
+      transform: translateY(-100%) translate(-50%, -50%);
+    }
+  }
+</style>
